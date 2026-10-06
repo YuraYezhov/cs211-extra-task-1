@@ -30,3 +30,21 @@ double to_24_hour_clock(double hours)
     double frac_part = hours - int_part;
     return (int_part % 24) + frac_part;
 }
+
+// Return the hours part of a time in seconds.
+int get_hours(int seconds)
+{
+    return seconds / 3600;
+}
+
+// Return the minutes part of a time in seconds.
+int get_minutes(int seconds)
+{
+    return (seconds % 3600) / 60;
+}
+
+// Return the seconds part of a time in seconds.
+int get_seconds(int seconds)
+{
+    return seconds % 60;
+}

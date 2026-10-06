@@ -11,3 +11,12 @@ double to_float_hours(int hours, int minutes, int seconds);
 
 // Return the hour as seen on a 24 - hour clock.
 double to_24_hour_clock(double hours);
+
+// Return the hours part of a time in seconds.
+int get_hours(int seconds);
+
+// Return the minutes part of a time in seconds.
+int get_minutes(int seconds);
+
+// Return the seconds part of a time in seconds.
+int get_seconds(int seconds);
