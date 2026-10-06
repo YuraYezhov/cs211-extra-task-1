@@ -22,3 +22,11 @@ double to_float_hours(int hours, int minutes, int seconds)
     assert(seconds >= 0 && seconds < 60);
     return hours + (minutes / 60.0) + (seconds / 3600.0);
 }
+
+// Return the hour as seen on a 24 - hour clock.
+double to_24_hour_clock(double hours)
+{
+    int int_part = static_cast<int>(hours);
+    double frac_part = hours - int_part;
+    return (int_part % 24) + frac_part;
+}
